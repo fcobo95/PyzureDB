@@ -6,30 +6,8 @@ import getpass
 class ApplicationConnector:
 
     @staticmethod
-    def checkForTryAgain():
-        return input(">>Want to try again? [Y/N]\n")
-
-    @staticmethod
-    def checkForMoreInputs():
-        return input(">>Do you want to keep using the app? [Y/N]\n")
-
-    @staticmethod
-    def checkForMoreInserts():
-        return input(">>Do you want to insert more values?[Y/N]\n")
-
-    @staticmethod
-    def checkForQuit(theOption):
-        theQuitOptions = ["\quit", "quit", "exit", "terminate", "end", "close"]
-        if theOption in theQuitOptions:
-            return theOption
-
-    @staticmethod
     def clearScreen():
         os.system('cls' if os.name == 'nt' else 'clear')
-
-    @staticmethod
-    def closeApp():
-        os._exit
 
     @staticmethod
     def formatTheError(theError):
